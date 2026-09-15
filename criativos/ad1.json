@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-15T22:53:34.758371Z",
+    "display_name": "Nano Banana Pro",
+    "id": "f5f9850e-463a-40ee-8f2d-0a4d87800f46",
+    "job_type": "nano_banana_pro",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FHlfomZ1Rk9lJJLiTqvi0pOvOY/hf_20260915_225334_f5f9850e-463a-40ee-8f2d-0a4d87800f46_min.webp",
+    "params": {
+      "application": null,
+      "aspect_ratio": "3:2",
+      "batch_size": 1,
+      "height": 1696,
+      "input_image": null,
+      "input_images": [],
+      "prompt": "Realistic candid editorial photo, a 62-year-old American woman with gray hair sitting at a sunny kitchen table in the morning, holding a small plain glucose meter, calm neutral expression, cup of coffee and a notebook on the table. Natural window light, documentary style, 35mm, sharp focus on her hands and the meter. No text, no logos, no before and after, nothing shocking.",
+      "resolution": "2k",
+      "surface": null,
+      "width": 2528
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FHlfomZ1Rk9lJJLiTqvi0pOvOY/hf_20260915_225334_f5f9850e-463a-40ee-8f2d-0a4d87800f46.png",
+    "status": "completed"
+  }
+]

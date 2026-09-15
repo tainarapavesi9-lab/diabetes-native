@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-15T22:53:34.796982Z",
+    "display_name": "Nano Banana Pro",
+    "id": "eeff46d1-f42d-4846-862b-35b4a409af5a",
+    "job_type": "nano_banana_pro",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FHlfomZ1Rk9lJJLiTqvi0pOvOY/hf_20260915_225334_eeff46d1-f42d-4846-862b-35b4a409af5a_min.webp",
+    "params": {
+      "application": null,
+      "aspect_ratio": "3:2",
+      "batch_size": 1,
+      "height": 1696,
+      "input_image": null,
+      "input_images": [],
+      "prompt": "Realistic editorial photo of an older man's hands writing numbers in a small paper logbook next to a plain unbranded glucose meter on a wooden kitchen table, morning light, calm and orderly. No readable text, no logos.",
+      "resolution": "2k",
+      "surface": null,
+      "width": 2528
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FHlfomZ1Rk9lJJLiTqvi0pOvOY/hf_20260915_225334_eeff46d1-f42d-4846-862b-35b4a409af5a.png",
+    "status": "completed"
+  }
+]
