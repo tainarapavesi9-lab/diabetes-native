@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Counted Carbs for 600 Kids a Day. At 61, I Couldn't Figure Out My Own Blood Sugar.</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{--ink:#1c1c1c;--muted:#5f6368;--line:#e4e4e4;--accent:#0b6b3a;--accent-dark:#084f2b;--soft:#f3f7f4;--tag:#9b2c20;--paper:#fffdf8}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff;color:var(--ink);font:19px/1.7 Georgia,"Times New Roman",serif}
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--accent)}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:700px;margin:0 auto;padding-inline:18px}
+  .disclosure{background:#f1f1f1;color:#555;font:12px/1.4 -apple-system,Segoe UI,Arial,sans-serif;letter-spacing:.04em;text-align:center;padding:7px 12px}
+  header.site{border-bottom:3px double var(--ink);background:var(--paper)}
+  header.site .wrap{padding-block:16px;text-align:center}
+  .brand{font:700 30px/1 Georgia,serif;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--accent)}
+  .tagline{font:italic 14px/1.4 Georgia,serif;color:var(--muted);margin-top:6px}
+  nav.menu{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font:600 13px/1 -apple-system,Segoe UI,Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#444;border-top:1px solid var(--line);margin-top:14px;padding-top:12px}
+  .kicker{margin-top:26px;font:700 13px/1.3 -apple-system,Segoe UI,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--tag)}
+  h1{font:700 36px/1.18 Georgia,serif;margin:10px 0 14px;letter-spacing:-.01em}
+  .dek{font-size:21px;line-height:1.5;color:#3a3a3a;margin:0 0 16px}
+  .byline{font:14px/1.5 -apple-system,Segoe UI,Arial,sans-serif;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:10px;margin-bottom:22px}
+  .byline b{color:var(--ink)}
+  figure{margin:26px 0}
+  figcaption{font:italic 15px/1.45 Georgia,serif;color:var(--muted);margin-top:7px}
+  h2{font:700 27px/1.25 Georgia,serif;margin:40px 0 12px}
+  p{margin:0 0 18px}
+  .dropcap:first-letter{float:left;font:700 64px/.8 Georgia,serif;padding:6px 8px 0 0;color:var(--accent)}
+  .pull{border-left:4px solid var(--accent);padding:4px 0 4px 18px;margin:28px 0;font:italic 24px/1.45 Georgia,serif;color:#2b2b2b}
+  .note{background:var(--soft);border-radius:10px;padding:16px 18px;margin:26px 0;font:17px/1.6 -apple-system,Segoe UI,Arial,sans-serif}
+  .note b{display:block;margin-bottom:4px}
+  .stat{text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:20px;margin:28px 0}
+  .stat b{display:block;font:700 46px/1.1 Georgia,serif;color:var(--accent)}
+  .stat small{display:block;font:16px/1.5 -apple-system,Segoe UI,Arial,sans-serif;color:#3c4043;margin-top:6px}
+  .stat a{font:13px -apple-system,Segoe UI,Arial,sans-serif}
+  ul.check{list-style:none;padding:0;margin:0 0 18px}
+  ul.check li{position:relative;padding-left:36px;margin-bottom:12px}
+  ul.check li:before{content:"";position:absolute;left:0;top:6px;width:24px;height:24px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='white' stroke-width='3' d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/14px no-repeat}
+  ol.tried{padding-left:22px}
+  ol.tried li{margin-bottom:10px}
+  .ingredients{display:grid;gap:12px;margin:20px 0}
+  .ing{border:1px solid var(--line);border-radius:10px;padding:14px 16px;font:17px/1.55 -apple-system,Segoe UI,Arial,sans-serif}
+  .ing b{display:block;font-size:18px;margin-bottom:3px}
+  .cta-box{text-align:center;margin:32px 0}
+  .cta-box p{font:17px/1.5 -apple-system,Segoe UI,Arial,sans-serif;color:#3c4043}
+  a.cta{display:block;width:100%;background:var(--accent);color:#fff;text-decoration:none;font:700 21px/1.3 -apple-system,Segoe UI,Arial,sans-serif;padding:19px 20px;border-radius:10px;box-shadow:0 3px 0 var(--accent-dark)}
+  a.cta:hover{background:var(--accent-dark)}
+  .cta-note{font:14px/1.4 -apple-system,Segoe UI,Arial,sans-serif;color:var(--muted);margin-top:8px}
+  .product{display:grid;grid-template-columns:1fr;gap:16px;align-items:center;background:var(--soft);border-radius:12px;padding:18px;margin:28px 0}
+  .product img{max-width:300px;margin:0 auto}
+  .product p{font:17px/1.6 -apple-system,Segoe UI,Arial,sans-serif}
+  .reviews{display:grid;gap:14px;margin:18px 0}
+  .review{border:1px solid var(--line);border-radius:10px;padding:16px;font-family:-apple-system,Segoe UI,Arial,sans-serif}
+  .review .stars{color:#e0a800;letter-spacing:2px}
+  .review p{font-size:17px;margin:8px 0}
+  .review .who{font-size:14px;color:var(--muted)}
+  .source-note{font:13px/1.5 -apple-system,Segoe UI,Arial,sans-serif;color:var(--muted)}
+  .packs{display:grid;grid-template-columns:1fr;gap:14px;margin:20px 0 8px;font-family:-apple-system,Segoe UI,Arial,sans-serif}
+  .pack{border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;min-width:0}
+  .pack-best{border:3px solid var(--accent);background:var(--soft)}
+  .pack-tag{display:inline-block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:#6c757d;border-radius:20px;padding:3px 12px}
+  .pack-best .pack-tag{background:var(--accent)}
+  .pack img{width:100%;max-width:200px;margin:10px auto}
+  .pack-name{font:700 22px/1.2 Georgia,serif}
+  .pack-days{font-size:15px;color:var(--muted)}
+  .pack-price{font-size:17px;margin-top:6px}
+  .pack-price b{font-size:30px;color:var(--accent)}
+  .pack-total{font-size:15px;color:#3c4043;margin:4px 0 12px}
+  a.cta-small{font-size:18px;padding:14px 16px}
+  .guarantee{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:16px;margin:22px 0;font-family:-apple-system,Segoe UI,Arial,sans-serif}
+  .guarantee img{width:96px;flex:none}
+  .guarantee p{font-size:16px;margin:4px 0 0}
+  .faq{font-family:-apple-system,Segoe UI,Arial,sans-serif}
+  .faq details{border-bottom:1px solid var(--line);padding-block:13px}
+  .faq summary{font-weight:700;cursor:pointer;font-size:18px}
+  .faq details p{margin:8px 0 0;font-size:17px}
+  .disclaimer{font:14px/1.55 -apple-system,Segoe UI,Arial,sans-serif;color:var(--muted);background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:14px;margin:28px 0}
+  .related h3{font:700 20px/1.3 Georgia,serif;margin:38px 0 12px;border-top:3px solid var(--ink);padding-top:10px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{text-decoration:none;color:var(--ink)}
+  .card img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
+  .card span{display:block;font:700 16px/1.35 -apple-system,Segoe UI,Arial,sans-serif;margin-top:6px}
+  footer.site{margin-top:40px;background:#f6f6f6;border-top:1px solid var(--line);font:13px/1.55 -apple-system,Segoe UI,Arial,sans-serif;color:var(--muted)}
+  footer.site .wrap{padding-block:24px}
+  footer.site a{color:var(--muted)}
+  dialog.legal{width:min(680px,calc(100% - 32px));max-height:85vh;overflow-y:auto;border:none;border-radius:12px;padding:0;box-shadow:0 20px 60px rgba(0,0,0,.35);font:16px/1.6 -apple-system,Segoe UI,Arial,sans-serif;color:var(--ink)}
+  dialog.legal::backdrop{background:rgba(0,0,0,.55)}
+  .legal-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border-bottom:1px solid var(--line);padding:14px 18px}
+  .legal-head h2{font:700 20px/1.3 Georgia,serif;margin:0}
+  .legal-close{border:none;background:#f1f1f1;border-radius:50%;width:36px;height:36px;font-size:20px;line-height:1;cursor:pointer;flex:none}
+  .legal-body{padding:16px 18px 22px}
+  .legal-body h3{font-size:16px;margin:18px 0 6px}
+  .legal-body p,.legal-body li{font-size:15px;margin:0 0 10px}
+  .legal-body ul{padding-left:20px;margin:0 0 10px}
+  .legal-updated{color:var(--muted);font-size:13px}
+  @media (min-width:640px){
+    h1{font-size:44px}
+    .product{grid-template-columns:240px 1fr}
+    .cards{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .packs{grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">SPONSORED CONTENT &middot; ADVERTORIAL &middot; FOR EDUCATIONAL PURPOSES ONLY &middot; NOT MEDICAL ADVICE</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#">Grayfield <span>Review</span></a>
+    <div class="tagline">Straight talk about health after 50</div>
+    <nav class="menu"><span>Blood Sugar</span><span>Heart</span><span>Nutrition</span><span>Healthy Aging</span></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="kicker">Blood Sugar &middot; Reader Story &middot; 8 min read</div>
+
+  <h1>I Counted Carbs for 600 Kids a Day for 31 Years. At 61, I Couldn't Figure Out My Own Blood Sugar.</h1>
+
+  <p class="dek">I ate the "right" breakfast, took my walks and still watched my morning numbers creep up. What finally made sense wasn't another diet. It was understanding why my cells had stopped listening to insulin.</p>
+
+  <div class="byline"><b>A reader story, as told to the Grayfield Review</b> &middot; <span id="today"></span><br>Names and some details have been changed for privacy.</div>
+
+  <figure>
+    <img src="img/hero.webp" alt="Woman in her 60s checking a glucose meter at her kitchen table" width="1200" height="805">
+    <figcaption>"Every morning started the same way: coffee, the meter, and a number I didn't like."</figcaption>
+  </figure>
+
+  <p class="dropcap">For 31 years I ran a school cafeteria in Ohio. I planned meals for about 600 kids a day, and I could tell you the carbs in a dinner roll without looking it up.</p>
+
+  <p>So when my doctor told me at 59 that my blood sugar was "creeping into the prediabetes range," I was almost offended. <i>Me?</i> I knew nutrition better than anyone I knew.</p>
+
+  <p>I did everything he said. I cut the white bread. I swapped soda for water. I walked 30 minutes after dinner with my husband, Ray.</p>
+
+  <p>And for two years, my morning numbers kept climbing anyway.</p>
+
+  <div class="pull">"I felt like I was failing a test I had been teaching for three decades."</div>
+
+  <h2>The afternoon crash nobody warned me about</h2>
+
+  <p>The numbers were only half of it. The part that really wore me down was how I felt.</p>
+
+  <p>About an hour after lunch, a wave of tiredness would roll in so hard I'd sit down "for a minute" and wake up at 3:30. Then came the cravings. Not a polite craving. A <i>drive-to-the-store-for-cookies</i> craving.</p>
+
+  <figure>
+    <img src="img/slump.webp" alt="Man in his 60s feeling tired on the couch after lunch" width="1200" height="805">
+    <figcaption>Ray had the same afternoon slump. We used to joke that we were "on the 2 o'clock schedule."</figcaption>
+  </figure>
+
+  <p>My mother lived with type 2 diabetes for 20 years. I remember her pricking her finger at the kitchen table, and I remember the day they talked about her feet. That memory scared me more than any number on a meter.</p>
+
+  <h2>The "healthy" breakfast that was working against me</h2>
+
+  <p>Here is the first thing that surprised me. My breakfast was the problem, and it looked perfect on paper.</p>
+
+  <p>A glass of orange juice. A banana. Whole wheat toast with a little jam. No sugar in my coffee. I was proud of that breakfast.</p>
+
+  <p>But when I finally wore a glucose monitor for two weeks, the graph after that meal looked like a mountain. Juice and ripe fruit on an empty stomach send sugar into the blood fast, and my body was struggling to clear it.</p>
+
+  <div class="note"><b>Worth knowing</b>Fruit juice is absorbed much faster than whole fruit because the fiber is removed. Pairing carbohydrates with protein, fat and fiber can slow how quickly sugar reaches the bloodstream.</div>
+
+  <figure>
+    <img src="img/meal.webp" alt="Balanced plate with grilled chicken, salad, quinoa and vegetables" width="1200" height="805">
+    <figcaption>"Now my plate always has protein and vegetables next to the carbs."</figcaption>
+  </figure>
+
+  <p>Changing breakfast helped a little. But it didn't explain why my body had become so bad at handling sugar in the first place. That was the question nobody had answered for me.</p>
+
+  <h2>Why your body stops "listening" to insulin after 50</h2>
+
+  <p>The answer came from my daughter, Megan, who is a pharmacist. She drew it on a napkin at Sunday dinner, and it was the first time it clicked.</p>
+
+  <figure>
+    <img src="img/mechanism.webp" alt="Illustration of insulin as a key unlocking a cell so glucose can enter" width="1200" height="805">
+    <figcaption>Insulin works like a key. When the "locks" get sticky, sugar stays in the blood.</figcaption>
+  </figure>
+
+  <p>"Mom, insulin is a key," she said. "Every cell in your body has a lock. When you eat, insulin opens the lock so sugar can go inside and become energy."</p>
+
+  <p>"But with age, belly weight, stress and bad sleep, the locks get sticky. The key still turns up, but the door won't open. Doctors call it <b>insulin resistance</b>."</p>
+
+  <p>When the locks don't open, sugar stays in your blood. Your body pumps out even more insulin to force the door. That's the roller coaster: a spike after meals, a crash, and then the cravings.</p>
+
+  <p>I sat there with that napkin and felt something I hadn't felt in two years. Not guilt. <b>Relief.</b> I wasn't lazy. I wasn't failing. My cells had simply gotten worse at using the key.</p>
+
+  <div class="stat">
+    <b>115 million</b>
+    <small>American adults have prediabetes, according to the CDC.</small>
+    <a href="https://www.cdc.gov/diabetes/php/data-research/index.html" target="_blank" rel="noopener">Source: CDC, National Diabetes Statistics (2023 data)</a>
+  </div>
+
+  <h2>Does any of this sound like you?</h2>
+
+  <p>Megan gave me a short list of signs that often show up when the body is struggling with sugar. I checked every single one.</p>
+
+  <ul class="check">
+    <li>You feel a heavy energy crash one or two hours after meals</li>
+    <li>You crave sweets or bread in the afternoon, almost like clockwork</li>
+    <li>You carry extra weight around your middle that won't move, even when you eat less</li>
+    <li>Your morning readings keep creeping up even though you "eat right"</li>
+  </ul>
+
+  <p>If two or more of these sound familiar, talk to your doctor about checking for insulin resistance. And keep reading, because what I found next is what finally gave me back my afternoons.</p>
+
+  <div class="cta-box">
+    <a class="cta" data-area="cta1" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=cta1">See the Formula That Helped Me &raquo;</a>
+  </div>
+
+  <h2>What I tried before (and why it wasn't enough)</h2>
+
+  <p>I want to be honest about this part, because I spent a lot of money figuring it out.</p>
+
+  <ol class="tried">
+    <li><b>Cutting carbs hard.</b> My numbers dipped, but I was miserable and irritable, and I quit in three weeks.</li>
+    <li><b>Cinnamon capsules from the drugstore.</b> I took them for four months. I honestly couldn't tell any difference.</li>
+    <li><b>Apple cider vinegar before meals.</b> It burned my throat, and I couldn't keep it up.</li>
+    <li><b>A "blood sugar tea" from social media.</b> Expensive, and the ingredient list was mostly flavoring.</li>
+  </ol>
+
+  <p>Every one of these went after one small piece of the problem. None of them helped my cells use the key better, which was the whole reason the sugar was piling up.</p>
+
+  <h2>The bottle a customer brought to Megan's counter</h2>
+
+  <p>A few weeks later, Megan called me from work. A customer in her 60s had brought a supplement to the pharmacy counter and asked if it was safe to take with her blood pressure pills.</p>
+
+  <p>"Mom, it's called <b>Sugar Reset</b>," she said. "I told her to check with her doctor. But I read the label, and I want to look into these ingredients for you."</p>
+
+  <p>I'll be honest, I rolled my eyes. I'd already wasted money on cinnamon and vinegar. But Megan doesn't get excited about supplements, so I let her do her homework.</p>
+
+  <figure>
+    <img src="img/ingredients.webp" alt="Flat lay of gymnema leaves, green tea, maca powder, ginseng root and capsules" width="1200" height="805">
+  </figure>
+
+  <h2>What Megan found when she checked the 6 ingredients</h2>
+
+  <p>She went through the label one ingredient at a time and sorted them the way a pharmacist would: what has actual research on blood sugar, and what is there for support.</p>
+
+  <p><b>The four with research on blood sugar:</b></p>
+
+  <div class="ingredients">
+    <div class="ing"><b>Chromium Picolinate</b>A trace mineral involved in how insulin works. A 2022 review of 16 studies in people with type 2 diabetes suggested chromium may help improve long-term glucose markers and insulin resistance, according to the <a href="https://www.nccih.nih.gov/health/diabetes-and-dietary-supplements-what-you-need-to-know" target="_blank" rel="noopener">NIH's National Center for Complementary and Integrative Health</a>. "That study wasn't done in people with prediabetes like you," Megan pointed out, "but it's the strongest evidence on this label."</div>
+    <div class="ing"><b>Gymnema Leaf Extract</b>Used for centuries in Ayurvedic tradition, where its name translates to "sugar destroyer." It has been looked at in small studies on blood sugar and sweet cravings.</div>
+    <div class="ing"><b>Green Tea Leaf Extract</b>Rich in catechins, plant compounds that have been studied for their role in glucose and metabolic health.</div>
+    <div class="ing"><b>Panax Ginseng</b>A root that has been studied for diabetes, though the <a href="https://www.nccih.nih.gov/health/diabetes-and-dietary-supplements-what-you-need-to-know" target="_blank" rel="noopener">NCCIH</a> notes that research so far is limited.</div>
+  </div>
+
+  <p><b>The two that are there for support:</b></p>
+
+  <div class="ingredients">
+    <div class="ing"><b>Maca Root Extract</b>A traditional Peruvian root used for energy and stress. Megan was clear: "There isn't real research tying maca to blood sugar. It's there for energy."</div>
+    <div class="ing"><b>African Mango Seed Extract</b>Traditionally used for appetite and cravings. Again, not a blood sugar ingredient on its own.</div>
+  </div>
+
+  <p class="source-note">Research on herbal supplements for blood sugar is still limited in size and quality. Supplements do not replace medication, diet or medical care.</p>
+
+  <p>That honesty is what got me. Megan didn't tell me it was magic. She told me that four of the ingredients had been studied for exactly my problem, two were there to help with the energy and cravings I complained about, and all six came in one daily formula instead of six bottles I'd forget to take.</p>
+
+  <p>It's made to be taken alongside a sensible diet and your doctor's care, not instead of them. And it came with a <b>60-day money-back guarantee</b>, so I had nothing to lose but a couple of months.</p>
+
+  <p>I showed the label to my doctor before I started. He said the ingredients were reasonable to try as long as I kept checking my numbers and didn't change my medication on my own. So that's exactly what I did.</p>
+
+  <h2>What changed for me</h2>
+
+  <p>I'm not going to tell you it was a miracle, because it wasn't. It was gradual, and it was real.</p>
+
+  <p>The first thing I noticed, around the third week, was my afternoons. The 2 o'clock crash got softer. I stopped falling asleep on the couch, and the cookie runs mostly stopped because the cravings didn't hit as hard.</p>
+
+  <p>Over the next couple of months, my readings stopped swinging so wildly. At my next checkup, my doctor was happy with the direction things were going, and we agreed to keep doing what I was doing.</p>
+
+  <figure>
+    <img src="img/walk.webp" alt="Couple in their 60s walking in a park" width="1200" height="805">
+    <figcaption>"Ray and I still walk after dinner. The difference is that now I actually enjoy it."</figcaption>
+  </figure>
+
+  <div class="note"><b>Please read</b>This is one person's experience. Results vary from person to person. Sugar Reset is a dietary supplement and is not intended to diagnose, treat, cure or prevent any disease. If you have diabetes or take glucose-lowering medication, talk to your doctor before trying any supplement.</div>
+
+  <h2>How to get Sugar Reset (and which package I chose)</h2>
+
+  <p>Sugar Reset isn't sold on Amazon, in pharmacies or at big retail stores. It's only available on the official website, and orders are processed by BuyGoods, a US online retailer.</p>
+
+  <p>Since any change takes consistent daily use, I went with the 6-bottle supply. It had the lowest price per bottle and meant I didn't have to reorder every month. The 3-bottle package is a good middle option if you want to try it for 90 days.</p>
+
+  <div class="note"><b>60-day money-back guarantee</b>Every package is covered for 60 days. If you're not happy with Sugar Reset for any reason, you can contact the company and ask for a full refund. Check current prices and shipping options on the official website.</div>
+
+  <div class="cta-box">
+    <p>Check today's discount on the official website:</p>
+    <a class="cta" data-area="offer" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=offer">Check Sugar Reset Availability &raquo;</a>
+  </div>
+
+  <h2>Questions I had before ordering</h2>
+
+  <div class="faq">
+    <details><summary>Where can I buy Sugar Reset?</summary><p>Only on the official website. It isn't sold on Amazon, in pharmacies or in retail stores, so copies you find elsewhere may not be the real product.</p></details>
+    <details><summary>Which package makes the most sense?</summary><p>The 6-bottle package has the lowest price per bottle and covers 180 days. The 3-bottle package covers 90 days. Check current prices and shipping on the official website.</p></details>
+    <details><summary>How do I take it?</summary><p>Follow the directions on the label. If you take any medication, show the label to your doctor first.</p></details>
+    <details><summary>Can I take it with my diabetes medication?</summary><p>Talk to your doctor first. Some ingredients may affect blood sugar, so your doctor may want to monitor your readings. Never stop or change medication on your own.</p></details>
+    <details><summary>What if it doesn't work for me?</summary><p>Every order has a 60-day money-back guarantee. Contact the company within 60 days for a refund.</p></details>
+  </div>
+
+  <h2>If you've been doing "everything right"</h2>
+
+  <p>I spent two years blaming myself for numbers I didn't understand. If you're in that place right now, I want you to hear what I needed to hear: <b>it may not be your willpower.</b> It may be how your cells respond to insulin.</p>
+
+  <p>Keep your walks. Fix your breakfast. Work with your doctor. And if you want to support your body the way I did, take a look at the formula that finally fit into my real life.</p>
+
+  <div class="cta-box">
+    <p>See the packages and the 60-day guarantee on the official website:</p>
+    <a class="cta" data-area="cta2" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=cta2">Visit the Official Sugar Reset Website &raquo;</a>
+    <div class="cta-note">60-day money-back guarantee</div>
+  </div>
+
+  <div class="disclaimer">
+    <b>Important:</b> This article is a reader story shared for educational purposes. Names and some details have been changed. It is sponsored content and does not constitute medical advice. Results vary. Dietary supplements are not intended to diagnose, treat, cure or prevent any disease. Do not stop or change any medication without talking to your doctor. If you have diabetes or take glucose-lowering medication, consult your healthcare provider before using any supplement.
+  </div>
+
+  <section class="related">
+    <h3>More From Grayfield Review</h3>
+    <div class="cards">
+      <a class="card" data-area="related1" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=related1"><img src="img/card1.webp" alt="Bowl of oatmeal with cinnamon"><span>The breakfast swap many people over 50 are making</span></a>
+      <a class="card" data-area="related2" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=related2"><img src="img/card2.webp" alt="Man writing in a logbook next to a glucose meter"><span>Why morning glucose readings creep up with age</span></a>
+      <a class="card" data-area="related3" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=related3"><img src="img/card3.webp" alt="Woman walking in the evening"><span>The 10-minute habit after dinner worth trying</span></a>
+      <a class="card" data-area="related4" href="https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/?click_area=related4"><img src="img/card4.webp" alt="Cup of green tea on a windowsill"><span>What researchers say about green tea and metabolism</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><b>Advertising disclosure:</b> This page is an advertorial, not a news article or blog. Grayfield Review may receive a commission from purchases made through links on this page. Stories are shared by readers and edited for length and privacy; names and identifying details have been changed.</p>
+    <p>The statements on this page have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Testimonials reflect individual experiences and do not guarantee similar results.</p>
+    <p>Sources: <a href="https://www.cdc.gov/diabetes/php/data-research/index.html" target="_blank" rel="noopener">CDC, National Diabetes Statistics</a> &middot; <a href="https://www.nccih.nih.gov/health/diabetes-and-dietary-supplements-what-you-need-to-know" target="_blank" rel="noopener">NCCIH, Diabetes and Dietary Supplements</a></p>
+    <p>[COMPANY NAME] &middot; [ADDRESS] &middot; [SUPPORT EMAIL]</p>
+    <p><a href="#privacy" data-legal="privacy">Privacy Policy</a> &middot; <a href="#terms" data-legal="terms">Terms of Use</a> &middot; <a href="#disclaimer" data-legal="disclaimer">Disclaimer</a> &middot; <a href="#contact" data-legal="contact">Contact</a></p>
+    <p>&copy; <span id="year"></span> Grayfield Review</p>
+  </div>
+</footer>
+
+<dialog class="legal" id="legal-privacy" aria-labelledby="privacy-title">
+  <div class="legal-head"><h2 id="privacy-title">Privacy Policy</h2><button class="legal-close" type="button" aria-label="Close">&times;</button></div>
+  <div class="legal-body">
+    <p class="legal-updated">Last updated: September 15, 2026</p>
+    <p>This Privacy Policy explains how [COMPANY NAME] ("we", "us"), the publisher of Grayfield Review, collects and uses information when you visit this website.</p>
+    <h3>1. Information we collect</h3>
+    <ul>
+      <li><b>Information you give us.</b> If you email us, we receive your name, email address and the content of your message.</li>
+      <li><b>Information collected automatically.</b> Like most websites, we and our partners collect technical data such as your IP address, browser type, device, pages viewed, time on page and the website that referred you.</li>
+      <li><b>Cookies and similar technologies.</b> We use cookies, pixels and similar tools to understand how visitors use the site and to measure the performance of our advertising.</li>
+    </ul>
+    <h3>2. How we use information</h3>
+    <ul>
+      <li>To operate, maintain and improve the website.</li>
+      <li>To understand which articles and links are useful to readers.</li>
+      <li>To measure and improve advertising campaigns, including on content recommendation networks such as Taboola.</li>
+      <li>To respond to messages you send us.</li>
+      <li>To comply with legal obligations and prevent fraud.</li>
+    </ul>
+    <h3>3. Advertising and affiliate partners</h3>
+    <p>This website contains links to third-party websites, including the websites of products we write about. When you click these links, the third party may place cookies and collect information about your visit and any purchase. We may receive a commission from purchases. These third parties have their own privacy policies, and we are not responsible for their practices.</p>
+    <p>We work with advertising partners that may use cookies and pixels to measure ad performance and show relevant ads. You can learn more about how Taboola uses data in its own privacy policy.</p>
+    <h3>4. Health information</h3>
+    <p>We do not ask for, and you should not send us, personal health information. We do not collect medical records or health data through this website.</p>
+    <h3>5. Sharing of information</h3>
+    <p>We do not sell your name or email address. We share information only with service providers that help us run the website (such as hosting and analytics), with advertising and affiliate partners as described above, or when required by law.</p>
+    <h3>6. Your choices and rights</h3>
+    <ul>
+      <li>You can block or delete cookies in your browser settings.</li>
+      <li>Depending on where you live (for example California, the European Union or the United Kingdom), you may have the right to access, correct or delete personal information we hold about you, and to opt out of certain uses. To make a request, contact us at [SUPPORT EMAIL].</li>
+    </ul>
+    <h3>7. Children</h3>
+    <p>This website is intended for adults. We do not knowingly collect information from children under 13.</p>
+    <h3>8. Security and retention</h3>
+    <p>We use reasonable measures to protect information and keep it only as long as needed for the purposes above or as required by law.</p>
+    <h3>9. Changes</h3>
+    <p>We may update this policy from time to time. The date at the top shows when it was last changed.</p>
+    <h3>10. Contact</h3>
+    <p>[COMPANY NAME]<br>[ADDRESS]<br>[SUPPORT EMAIL]</p>
+  </div>
+</dialog>
+
+<dialog class="legal" id="legal-terms" aria-labelledby="terms-title">
+  <div class="legal-head"><h2 id="terms-title">Terms of Use</h2><button class="legal-close" type="button" aria-label="Close">&times;</button></div>
+  <div class="legal-body">
+    <p class="legal-updated">Last updated: September 15, 2026</p>
+    <p>By using Grayfield Review (the "website"), published by [COMPANY NAME], you agree to these Terms of Use. If you do not agree, please do not use the website.</p>
+    <h3>1. Informational content only</h3>
+    <p>All content on this website is for general information and education. It is not medical advice and does not replace the advice of a doctor or other qualified health professional. Always talk to your doctor before starting any supplement, changing your diet or changing any medication.</p>
+    <h3>2. Advertorials and sponsored content</h3>
+    <p>Some pages on this website are advertorials. They are commissioned content created to promote a product, not independent news articles. Stories on these pages may be shared by readers and edited, and names and identifying details may be changed.</p>
+    <h3>3. Affiliate links</h3>
+    <p>This website contains affiliate links. If you click a link and make a purchase, we may earn a commission at no extra cost to you. Products are sold by third-party merchants, not by us. Questions about orders, shipping, refunds and guarantees must be directed to the merchant.</p>
+    <h3>4. Third-party websites</h3>
+    <p>We are not responsible for the content, products, policies or practices of third-party websites linked from this website.</p>
+    <h3>5. No guarantees</h3>
+    <p>Individual results vary. We make no guarantee that any product described on this website will produce any particular result. The website is provided "as is" without warranties of any kind.</p>
+    <h3>6. Limitation of liability</h3>
+    <p>To the fullest extent allowed by law, [COMPANY NAME] is not liable for any damages arising from your use of the website or from any product purchased through links on the website.</p>
+    <h3>7. Intellectual property</h3>
+    <p>The text, images and design of this website belong to [COMPANY NAME] or its licensors. You may not copy or republish them without permission.</p>
+    <h3>8. Changes</h3>
+    <p>We may update these terms at any time. Continued use of the website means you accept the updated terms.</p>
+    <h3>9. Contact</h3>
+    <p>[COMPANY NAME]<br>[ADDRESS]<br>[SUPPORT EMAIL]</p>
+  </div>
+</dialog>
+
+<dialog class="legal" id="legal-disclaimer" aria-labelledby="disclaimer-title">
+  <div class="legal-head"><h2 id="disclaimer-title">Disclaimer</h2><button class="legal-close" type="button" aria-label="Close">&times;</button></div>
+  <div class="legal-body">
+    <h3>Medical disclaimer</h3>
+    <p>The information on this website is for educational purposes only and is not intended as medical advice, diagnosis or treatment. Do not stop, start or change any medication without talking to your doctor. If you have diabetes or prediabetes, or take glucose-lowering medication, consult your healthcare provider before using any dietary supplement.</p>
+    <h3>FDA disclaimer</h3>
+    <p>The statements on this website have not been evaluated by the Food and Drug Administration. Products mentioned are not intended to diagnose, treat, cure or prevent any disease.</p>
+    <h3>Advertising disclosure</h3>
+    <p>This page is an advertorial, not a news article or blog. [COMPANY NAME] may receive a commission from purchases made through links on this page.</p>
+    <h3>Stories and results</h3>
+    <p>Stories are shared by readers and edited for length and privacy. Names and identifying details have been changed. Individual experiences do not guarantee that you will get the same or similar results.</p>
+  </div>
+</dialog>
+
+<dialog class="legal" id="legal-contact" aria-labelledby="contact-title">
+  <div class="legal-head"><h2 id="contact-title">Contact</h2><button class="legal-close" type="button" aria-label="Close">&times;</button></div>
+  <div class="legal-body">
+    <p>For questions about the content of Grayfield Review, corrections or privacy requests:</p>
+    <p><b>[COMPANY NAME]</b><br>[ADDRESS]<br>Email: [SUPPORT EMAIL]</p>
+    <h3>Questions about an order?</h3>
+    <p>Products mentioned on this website are sold by third-party merchants. For questions about orders, shipping, refunds or the money-back guarantee, contact the merchant directly using the details on the official product website or in your order confirmation email.</p>
+  </div>
+</dialog>
+
+<script>
+  document.querySelectorAll("a[data-legal]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var dlg = document.getElementById("legal-" + a.dataset.legal);
+      if (!dlg || !dlg.showModal) return;
+      e.preventDefault();
+      dlg.showModal();
+    });
+  });
+  document.querySelectorAll("dialog.legal").forEach(function (dlg) {
+    dlg.querySelector(".legal-close").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  });
+
+  // Trocar pelo seu link de afiliado
+  var OFFER_URL = "https://www.fasttrack37.com/PM7HK3TH/32MFQB8P/";
+
+  var d = new Date();
+  document.getElementById("today").textContent = d.toLocaleDateString("en-US", {month:"long", day:"numeric", year:"numeric"});
+  document.getElementById("year").textContent = d.getFullYear();
+
+  // Enquanto as fotos nao entram, mostra um marcador no lugar de cada uma
+  document.querySelectorAll("img").forEach(function (img) {
+    function swap() {
+      var box = document.createElement("div");
+      box.style.cssText = "background:#e9ecef;border:2px dashed #adb5bd;border-radius:8px;color:#495057;font:600 15px/1.4 sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;aspect-ratio:3/2;width:100%";
+      box.textContent = "FOTO: " + img.alt;
+      img.replaceWith(box);
+    }
+    if (img.complete && img.naturalWidth === 0) swap(); else img.addEventListener("error", swap);
+  });
+
+  var incoming = new URLSearchParams(location.search);
+  document.querySelectorAll("a[data-area]").forEach(function (a) {
+    var url = new URL(OFFER_URL);
+    incoming.forEach(function (v, k) { url.searchParams.set(k, v); });
+    url.searchParams.set("click_area", a.dataset.area);
+    a.href = url.toString();
+  });
+</script>
+</body>
+</html>
