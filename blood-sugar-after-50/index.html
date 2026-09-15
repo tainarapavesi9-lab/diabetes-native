@@ -386,11 +386,11 @@
   document.querySelectorAll("a[data-area]").forEach(function (a) {
     a.addEventListener("click", function (e) {
       if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) {
-        window._tfa.push({notify: "ecevent", name: "click_offer", id: 2105796});
+        window._tfa.push({notify: "event", name: "click_offer", id: 2105796});
         return;
       }
       e.preventDefault();
-      window._tfa.push({notify: "ecevent", name: "click_offer", id: 2105796});
+      window._tfa.push({notify: "event", name: "click_offer", id: 2105796});
       var href = a.href;
       setTimeout(function () { window.location.href = href; }, 300);
     });
