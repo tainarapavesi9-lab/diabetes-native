@@ -377,6 +377,9 @@
     var url = new URL(OFFER_URL);
     incoming.forEach(function (v, k) { url.searchParams.set(k, v); });
     url.searchParams.set("click_area", a.dataset.area);
+    // Taboola manda o click ID como tblci; a GuruMedia devolve o sub1 no postback da venda
+    if (incoming.get("tblci")) url.searchParams.set("sub1", incoming.get("tblci"));
+    url.searchParams.set("sub2", a.dataset.area);
     a.href = url.toString();
   });
 
