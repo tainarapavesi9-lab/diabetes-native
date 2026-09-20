@@ -3,6 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Taboola Pixel Code -->
+<script type='text/javascript'>
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 2105796});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/2105796/tfa.js',
+  'tb_tfa_script');
+</script>
+<!-- End of Taboola Pixel Code -->
 <title>Why More Women Are Skipping Botox for This Instead</title>
 <meta name="robots" content="noindex">
 <style>
@@ -262,6 +276,28 @@
 <script>
   var d = new Date();
   document.getElementById("year").textContent = d.getFullYear();
+
+  var incoming = new URLSearchParams(location.search);
+  document.querySelectorAll("a[data-area]").forEach(function (a) {
+    var url = new URL(a.href);
+    // Taboola manda o click ID como tblci; repassa pra MaxWeb poder casar a venda no postback
+    if (incoming.get("tblci")) url.searchParams.set("tblci", incoming.get("tblci"));
+    a.href = url.toString();
+  });
+
+  // Taboola: evento de clique no botao da oferta
+  document.querySelectorAll("a[data-area]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) {
+        window._tfa.push({notify: "event", name: "click_offer", id: 2105796});
+        return;
+      }
+      e.preventDefault();
+      window._tfa.push({notify: "event", name: "click_offer", id: 2105796});
+      var href = a.href;
+      setTimeout(function () { window.location.href = href; }, 300);
+    });
+  });
 </script>
 </body>
 </html>
