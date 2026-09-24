@@ -2,3 +2,5 @@ originais/
 imagens/*.json
 imagens/*.err
 prompts.txt
+.vercel
+.env*
